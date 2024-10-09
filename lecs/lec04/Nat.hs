@@ -2,7 +2,8 @@
 
 module Nat where
 
-import Prelude hiding (Num(..))
+import Prelude hiding
+   ( Num(..) )
 
 data Nat where
     O :: Nat

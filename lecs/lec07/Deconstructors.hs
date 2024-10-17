@@ -14,11 +14,11 @@ import Prelude
 
 head :: List a -> a
 head (Cons x _) = x
-head Nil = error "not made by the constructor I deconstruct: Cons"
+head _ = error "not made by the constructor I deconstruct: Cons"
 
 tail :: List a -> List a
 tail (Cons _ xs) = xs
-tail Nil = error "not made by the constructor I deconstruct: Cons"
+tail _ = error "not made by the constructor I deconstruct: Cons"
 
 -- Nat ---------------------------------------------------------
 
@@ -28,5 +28,5 @@ tail Nil = error "not made by the constructor I deconstruct: Cons"
 
 pred :: Nat -> Nat
 pred (S n) = n
-pred O = error "not made by the constructor I deconstruct: S"
+pred _ = error "not made by the constructor I deconstruct: S"
 

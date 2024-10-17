@@ -13,11 +13,11 @@ import Prelude
 -- Cons deconstructors (two: Cons is binary)
 
 head :: List a -> a
-head (x `Cons` _) = x
+head (Cons x _) = x
 head Nil = error "not made by the constructor I deconstruct: Cons"
 
 tail :: List a -> List a
-tail (_ `Cons` xs) = xs
+tail (Cons _ xs) = xs
 tail Nil = error "not made by the constructor I deconstruct: Cons"
 
 -- Nat ---------------------------------------------------------

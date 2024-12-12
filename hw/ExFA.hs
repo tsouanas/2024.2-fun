@@ -6,6 +6,7 @@ import Prelude hiding
     ( fmap
     , Functor(..)
     , (<$>) , (<$) , ($>) , (<&>)
+    , unzip
     , Applicative(..)
     , (<*>) , (<*) , (*>) , (<**>)
     , liftA , liftA2 , liftA3

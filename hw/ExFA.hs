@@ -3,11 +3,12 @@
 module FA where
 
 import Prelude hiding
-    ( fmap
-    , Functor(..)
+    ( Functor(..)
+    , fmap
     , (<$>) , (<$) , ($>) , (<&>)
     , unzip
     , Applicative(..)
+    , pure
     , (<*>) , (<*) , (*>) , (<**>)
     , liftA , liftA2 , liftA3
     )
